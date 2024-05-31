@@ -1,0 +1,36 @@
+$def-black: rgb(33, 37, 41);
+
+.upload-body {
+    min-height: 700px;
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    padding: 5px;
+    .file-upload {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 0;
+        grid-row-start: 1;
+        grid-row-end: -1;
+    }
+    .url-scrape {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 0;
+        grid-row-start: 1;
+        grid-row-end: -1;
+        .prev-urls{
+            h3{
+                color: $def-black;
+            }
+            ul{
+                color: $def-black;
+            }
+        }
+    }
+}

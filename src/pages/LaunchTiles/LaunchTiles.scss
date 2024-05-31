@@ -1,0 +1,97 @@
+$cardLength:200px;
+$cardHeight:200px;
+.tileContainer{
+    background-color: transparent;
+    width:100%;
+    height: 500px;
+    margin: 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    .carousel-control-prev,
+    .carousel-control-next{
+        height:15%;
+        align-self: center;
+        z-index: 0;
+    }
+
+    .carousel-control-prev{
+        margin-left: 2%;
+        width:auto;
+    }
+    .carousel-control-next{
+        margin-right: 2%;
+        width:auto;
+    }
+
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(100%);
+    }
+    .carousel-indicators{
+        button{
+            z-index: 0;
+            filter: invert(100%);
+        }
+    }
+    .carousel-inner{
+        height: 100%;
+        .carousel-item{
+            height: 100%;
+            .gridSlide{
+                width: 100%;
+                height:100%;
+                padding:10px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                display:grid;
+                column-gap: 10px;
+                background-color: gainsboro;
+                .cardContainer{
+                    width: 100%;
+                    max-height:490px;
+                    display:flex;
+                    flex-direction: column;
+                    .topIndicator{
+                        width:100%;
+                        height:5px;
+                        top:0;
+                    }
+                    .columnHolder{
+                        flex-grow: 1;
+                        display:flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: white;
+                        padding-bottom: 5%;
+                        .photoContainer{
+                            width:50%;
+                            height:auto;
+                            border-radius: 50%;
+                            //background-color: aquamarine;
+                            .image{
+                                width:100%;
+                                height:100%;
+                            }
+                        }
+                        .cardTitle{
+                            margin-top: 5px;
+                            font-size: 25pt;
+                        }
+                        .cardContent{
+                            margin:0;
+                            padding:0;
+                            font-size: 8pt;
+                            max-width : $cardLength;
+                            word-wrap: break-word;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

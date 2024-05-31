@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+}
+
+.root-layout {
+  margin: 0px;
+}
+.root-layout header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: bottom;
+  padding: 10px 10px 0px 10px;
+  background-color: #2e4761;
+  color: #e2e2e2;
+  min-height: 100px;
+}
+.root-layout header .logoHolder {
+  min-width: 60px;
+  height: 50px;
+}
+.root-layout header .logoHolder img {
+  width: auto;
+  height: 100%;
+}
+.root-layout header .pageTitle {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20pt;
+}
+.root-layout header .menu-items {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  font-size: 20pt;
+  font-family: Helvetica, sans-serif;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.root-layout header .menu-items li a {
+  color: white;
+  text-decoration: none;
+}
+.root-layout header .menu-items li a:hover {
+  text-decoration: underline;
+}
+.root-layout .container {
+  background-color: silver;
+  min-height: 100vh;
+}
+.root-layout footer {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

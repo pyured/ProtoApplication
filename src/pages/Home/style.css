@@ -1,0 +1,20 @@
+body .main-home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+body .main-home .chat {
+  background-color: red;
+  height: 100%;
+}
+body .main-home .about {
+  display: flex;
+}
+body .main-home button {
+  display: flex;
+  justify-content: center;
+  width: 8vw;
+}/*# sourceMappingURL=style.css.map */

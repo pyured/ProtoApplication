@@ -1,0 +1,70 @@
+.chat-area {
+  display: grid;
+  grid-template-rows: 9fr 1fr;
+  grid-row-start: 1;
+  grid-row-end: -1;
+}
+.chat-area .history {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgb(159, 159, 159);
+}
+.chat-area .history .entry {
+  padding: 0;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 0.1%;
+}
+.chat-area .history .entry .entry-content {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(180, 180, 180);
+}
+.chat-area .formContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(180, 180, 180);
+}
+.chat-area .formContainer form {
+  width: 95%;
+  height: 75%;
+  background-color: none;
+  display: flex;
+}
+.chat-area .formContainer form .input-box {
+  width: 90%;
+  border: 0;
+  background-color: whitesmoke;
+  padding-left: 1%;
+  border: 3px black solid;
+  border-radius: 15px 0px 0px 15px;
+  border-right-width: 0px;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  resize: none;
+}
+.chat-area .formContainer form .submit-input {
+  width: auto;
+  border: none;
+  background-color: rgb(106, 179, 148);
+  border: 3px black solid;
+  font-size: 18pt;
+  border-right-width: 0px;
+}
+.chat-area .formContainer form .reset-input {
+  width: auto;
+  border: none;
+  background-color: rgb(179, 106, 106);
+  border-radius: 0px 15px 15px 0px;
+  border: 3px black solid;
+  font-size: 18pt;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */
